@@ -50,7 +50,7 @@ app.use(errorMiddleware);
 
 
 app.get('/', (req, res) => {
-  res.send("backend running");
+  res.send("backend running properly");
 });
 
 // app.listen(5000, (req, res) => {
