@@ -14,9 +14,8 @@ import { endedAuctionCron } from "./automation/endedAuctionCron.js";
 import { verifyCommissionCron } from "./automation/verifyCommissionCron.js";
 
 const app = express();
-config({
-  path: "./config/config.env",
-});
+import dotenv from "dotenv";
+dotenv.config();
 
 
 app.use(
